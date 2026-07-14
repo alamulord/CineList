@@ -1,9 +1,9 @@
-﻿/* ============================================================
-   CineList â€” Design Tokens & Global Styles
+/* ============================================================
+   CineList — Design Tokens & Global Styles
    css/index.css
    ============================================================ */
 
-/* â”€â”€ 1. CSS Custom Properties (Design Tokens) â”€â”€ */
+/* —— 1. CSS Custom Properties (Design Tokens) —— */
 :root {
   /* Colours */
   --color-bg:           #0d0f14;
@@ -44,8 +44,6 @@
   --shadow-accent:      0 0 24px var(--color-accent-glow);
 
   /* Typography */
-  --font-body:          'Inter', system-ui, sans-serif;
-  --font-display:       'Outfit', 'Inter', system-ui, sans-serif;
 
   /* Spacing */
   --space-xs:  4px;
@@ -76,7 +74,7 @@
   --card-width-lg: 185px;
 }
 
-/* â”€â”€ 2. CSS Reset â”€â”€ */
+/* —— 2. CSS Reset —— */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -125,7 +123,7 @@ ul, ol {
   list-style: none;
 }
 
-/* â”€â”€ 3. Custom Scrollbar â”€â”€ */
+/* —— 3. Custom Scrollbar —— */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -141,14 +139,14 @@ ul, ol {
   background: var(--color-text-muted);
 }
 
-/* â”€â”€ 4. Focus Visible â”€â”€ */
+/* —— 4. Focus Visible —— */
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 3px;
   border-radius: var(--radius-sm);
 }
 
-/* â”€â”€ 5. Typography â”€â”€ */
+/* —— 5. Typography —— */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   line-height: 1.2;
@@ -162,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.01em;
 }
 
-/* â”€â”€ 6. Layout Utils â”€â”€ */
+/* —— 6. Layout Utils —— */
 .container {
   width: 100%;
   max-width: var(--max-width);
@@ -170,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-inline: var(--space-lg);
 }
 
-/* â”€â”€ 7. Header â”€â”€ */
+/* —— 7. Header —— */
 .site-header {
   position: sticky;
   top: 0;
@@ -330,7 +328,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1);
 }
 
-/* â”€â”€ 8. Hero Section â”€â”€ */
+/* —— 8. Hero Section —— */
 .hero {
   position: relative;
   height: clamp(420px, 55vh, 680px);
@@ -464,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--color-accent);
 }
 
-/* â”€â”€ 9. Buttons â”€â”€ */
+/* —— 9. Buttons —— */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -529,7 +527,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
-/* â”€â”€ 10. Main Content â”€â”€ */
+/* —— 10. Main Content —— */
 .main-content {
   max-width: var(--max-width);
   margin-inline: auto;
@@ -618,7 +616,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: var(--rail-gap);
 }
 
-/* â”€â”€ 11. Watchlist Drawer â”€â”€ */
+/* —— 11. Watchlist Drawer —— */
 .watchlist-drawer {
   position: fixed;
   inset: 0;
@@ -833,7 +831,7 @@ h1, h2, h3, h4, h5, h6 {
 .empty-text { font-weight: 600; }
 .empty-sub  { font-size: 0.85rem; }
 
-/* â”€â”€ 12. Modal â”€â”€ */
+/* —— 12. Modal —— */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -895,7 +893,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--color-accent);
 }
 
-/* â”€â”€ 13. Toast Notifications â”€â”€ */
+/* —— 13. Toast Notifications —— */
 .toast-container {
   position: fixed;
   bottom: var(--space-lg);
@@ -907,7 +905,7 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
 }
 
-/* â”€â”€ 14. Import Banner â”€â”€ */
+/* —— 14. Import Banner —— */
 .import-banner {
   position: fixed;
   top: calc(var(--header-height) + var(--space-md));
@@ -939,7 +937,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-shrink: 0;
 }
 
-/* â”€â”€ 15. Responsive â”€â”€ */
+/* —— 15. Responsive —— */
 @media (max-width: 768px) {
   :root {
     --card-width: 130px;
@@ -972,11 +970,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ============================================================
-   CineList â€” Component Styles
+   CineList — Component Styles
    css/components.css
    ============================================================ */
 
-/* â”€â”€ 1. Media Card â”€â”€ */
+/* —— 1. Media Card —— */
 .media-card {
   position: relative;
   flex-shrink: 0;
@@ -1196,7 +1194,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 200% 100%;
 }
 
-/* â”€â”€ 2. Genre Pill â”€â”€ */
+/* —— 2. Genre Pill —— */
 .genre-pill {
   padding: 5px 14px;
   border-radius: var(--radius-pill);
@@ -1223,7 +1221,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 2px 12px var(--color-accent-glow);
 }
 
-/* â”€â”€ 3. Search Dropdown â”€â”€ */
+/* —— 3. Search Dropdown —— */
 .search-dropdown {
   position: absolute;
   top: calc(100% + 8px);
@@ -1349,7 +1347,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-text-muted);
 }
 
-/* â”€â”€ 4. Modal Components â”€â”€ */
+/* —— 4. Modal Components —— */
 .modal-backdrop-container {
   position: relative;
   height: 280px;
@@ -1684,7 +1682,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .modal-notes::placeholder { color: var(--color-text-faint); }
 
-/* â”€â”€ 5. Watchlist List Item â”€â”€ */
+/* —— 5. Watchlist List Item —— */
 .wl-item {
   display: flex;
   align-items: center;
@@ -1785,7 +1783,7 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #c0392b;
 }
 
-/* â”€â”€ 6. Toast â”€â”€ */
+/* —— 6. Toast —— */
 .toast {
   display: flex;
   align-items: center;
@@ -1831,13 +1829,13 @@ h1, h2, h3, h4, h5, h6 {
   animation: toastOut 0.2s ease both;
 }
 
-/* â”€â”€ 7. Star rating display â”€â”€ */
+/* —— 7. Star rating display —— */
 .rating-stars {
   color: var(--color-warning);
   font-size: 0.8rem;
 }
 
-/* â”€â”€ 8. Hero skeleton â”€â”€ */
+/* —— 8. Hero skeleton —— */
 .hero-content.loading .hero-title {
   height: 2.5rem;
   width: 50%;
@@ -1859,7 +1857,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: var(--space-md);
 }
 
-/* â”€â”€ 9. Responsive Modal â”€â”€ */
+/* —— 9. Responsive Modal —— */
 @media (max-width: 640px) {
   .modal-body {
     flex-direction: column;
@@ -1878,22 +1876,22 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ============================================================
-   CineList â€” Keyframes & Animations
+   CineList — Keyframes & Animations
    css/animations.css
    ============================================================ */
 
-/* â”€â”€ Spin â”€â”€ */
+/* —— Spin —— */
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
 
-/* â”€â”€ Skeleton shimmer â”€â”€ */
+/* —— Skeleton shimmer —— */
 @keyframes shimmer {
   0%   { background-position: 200% 0; }
   100% { background-position: -200% 0; }
 }
 
-/* â”€â”€ Fade + Slide up â”€â”€ */
+/* —— Fade + Slide up —— */
 @keyframes fadeSlideIn {
   from {
     opacity: 0;
@@ -1905,7 +1903,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* â”€â”€ Fade + Slide down (dropdown) â”€â”€ */
+/* —— Fade + Slide down (dropdown) —— */
 @keyframes fadeSlideDown {
   from {
     opacity: 0;
@@ -1917,7 +1915,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* â”€â”€ Slide down (import banner) â”€â”€ */
+/* —— Slide down (import banner) —— */
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -1929,7 +1927,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* â”€â”€ Toast in â”€â”€ */
+/* —— Toast in —— */
 @keyframes toastIn {
   from {
     opacity: 0;
@@ -1941,7 +1939,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* â”€â”€ Toast out â”€â”€ */
+/* —— Toast out —— */
 @keyframes toastOut {
   from {
     opacity: 1;
@@ -1953,7 +1951,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* â”€â”€ Quick-add button pop â”€â”€ */
+/* —— Quick-add button pop —— */
 @keyframes quickAddPop {
   0%   { transform: scale(1); }
   40%  { transform: scale(1.4) rotate(-10deg); }
@@ -1965,7 +1963,7 @@ h1, h2, h3, h4, h5, h6 {
   animation: quickAddPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
 
-/* â”€â”€ Hero backdrop ken-burns â”€â”€ */
+/* —— Hero backdrop ken-burns —— */
 @keyframes kenBurns {
   from { transform: scale(1); }
   to   { transform: scale(1.06); }
@@ -1975,7 +1973,7 @@ h1, h2, h3, h4, h5, h6 {
   animation: kenBurns 12s ease-in-out infinite alternate;
 }
 
-/* â”€â”€ Watchlist badge bounce â”€â”€ */
+/* —— Watchlist badge bounce —— */
 @keyframes badgeBounce {
   0%   { transform: scale(1); }
   30%  { transform: scale(1.5); }
@@ -1987,7 +1985,7 @@ h1, h2, h3, h4, h5, h6 {
   animation: badgeBounce 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
 
-/* â”€â”€ Stagger children (used via JS) â”€â”€ */
+/* —— Stagger children (used via JS) —— */
 .stagger-children > * {
   opacity: 0;
   animation: fadeSlideIn 0.3s ease both;
@@ -2004,7 +2002,7 @@ h1, h2, h3, h4, h5, h6 {
 .stagger-children > *:nth-child(9)  { animation-delay: 0.36s; }
 .stagger-children > *:nth-child(10) { animation-delay: 0.40s; }
 
-/* â”€â”€ Glow pulse on accent â”€â”€ */
+/* —— Glow pulse on accent —— */
 @keyframes glowPulse {
   0%, 100% { box-shadow: 0 0 8px var(--color-accent-glow); }
   50%       { box-shadow: 0 0 24px var(--color-accent-glow), 0 0 40px var(--color-accent-glow); }
@@ -2014,7 +2012,7 @@ h1, h2, h3, h4, h5, h6 {
   animation: glowPulse 2s ease-in-out infinite;
 }
 
-/* â”€â”€ Page load fade â”€â”€ */
+/* —— Page load fade —— */
 @keyframes pageFade {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -2024,7 +2022,7 @@ body {
   animation: pageFade 0.4s ease both;
 }
 
-/* â”€â”€ Card flip on add (micro-interaction) â”€â”€ */
+/* —— Card flip on add (micro-interaction) —— */
 @keyframes cardAdd {
   0%   { transform: translateY(-6px) scale(1.02); }
   50%  { transform: translateY(-10px) scale(1.05); }
@@ -2035,7 +2033,7 @@ body {
   animation: cardAdd 0.3s ease;
 }
 
-/* â”€â”€ Reduce motion â”€â”€ */
+/* —— Reduce motion —— */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -2043,4 +2041,5 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
 
